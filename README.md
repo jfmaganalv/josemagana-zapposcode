@@ -8,7 +8,9 @@ I created my Zappos.Code() Application as one website experience. All projects a
 *** NOTE ***
 The BONUS (THE SEQUEL) project uses a MySQL database and two projects (Ninja Bookshelf and BONUS (THE SEQUEL) use PHP so all the files should be uploaded to your local server.
 
-1. Place the"josemagana_zapposcode" folder on your local server
+1. Download the zip
+1. When unzipped, change the crazy long name of the folder in this case I'll call it "josemagana-zapposcode"
+1. Place "josemagana-zapposcode" on your local server
 1. Create a database with with the todo_list.sql file located in: josemagana_zapposcode/todo_list_database/todo_list.sql
 1. Configure the db.php file to connect the database located in: josemagana_zapposcode/to_do_list/_/includes/db.php (current settings are db name: todo_list, localHost:8889)
 1. Open the index.html file in your browser: josemagana_zapposcode/index.html
