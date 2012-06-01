@@ -1,0 +1,232 @@
+/*
+	HTML5 Reset :: style.css http://html5reset.org/
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+ul {list-style: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+a:hover, a:active {outline: none;}
+small {font-size: 85%;}
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+/* clear fix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+/* --------------------------------------------------------------------------- 
+	
+	Author: Jose Magana
+	Date: May 22, 2012
+	Project: Zappos.code() Application Home
+	
+*/
+/*  Styles
+-------------------------------------------------------------------------------*/
+
+body, select, input, textarea {color: #333;}
+
+::-moz-selection{background: #ca8247; color: #fff; text-shadow: none;}
+::selection {background: #ca8247; color: #fff; text-shadow: none;} 
+
+a:link {-webkit-tap-highlight-color: #ca8247;} 
+a {
+	color: #41403e;
+	text-decoration: none;
+}
+a:hover {
+	color: #ca8247;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+/* Fonts */
+@font-face {
+    font-family: "Michroma";
+	  src: url("../type/Michroma-webfont.eot");
+	  src: local("☺"),
+	    url("../type/Michroma-webfont.woff") format("woff"),
+	    url("../type/Michroma-webfont.otf") format("opentype"),
+	    url("../type/Michroma-webfont.ttf") format("truetype"),
+	    url("../type/Michroma-webfont.svg#filename") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+}    
+body {
+	background: url(../img/bg.png) repeat;
+	font: .85em Georgia, serif;
+	color: #41403e;
+}
+#wrapper {
+	width: 860px;
+	margin: 0 auto;
+}
+/* Header
+------------------- */
+nav a {
+	background: url(../img/home-btn.jpg) no-repeat;
+	width: 60px;
+	height: 40px;
+	display: block;
+	text-indent: -9999px;
+}
+nav a:hover {
+	background: url(../img/home-btn.jpg) no-repeat;
+	background-position: 0 -40px;
+}
+#header-wrap {
+	height: 275px;
+	background: url(../img/header-stripe.png) repeat-x;
+}
+header {
+	width: 860px;
+	height: 274px;
+	margin: 0 auto;
+	border-bottom: 1px solid #9b9995;
+}
+header img {
+	float: left;
+	margin: 90px 20px 0 0;
+}
+header h1 {
+	font-family: Michroma, Helvetica, sans-serif;
+	font-size: 26px;
+	padding: 130px 0 0 0;
+	text-shadow: 0px 0px 1px #fff;
+}
+header h2 {
+	font-family: Michroma, Helvetica, sans-serif;
+	color: #41403e;
+	text-shadow: 0px 0px 1px #fff;
+	margin: -2px 0 0 142px;
+	font-size: 1.25em;
+}
+header span {
+	color: #539cff;
+}
+.content {
+	margin-top: 20px;
+	padding: 0 10px;
+}
+/* Content
+------------------- */
+.project {
+	float: left;
+	width: 240px;
+	height: 275px;
+	position: relative;
+	margin: 20px 60px 0 0;
+}
+.incomplete h2 {
+	text-decoration: line-through;
+}
+.project:nth-child(3n+0){
+	margin-right: 0;
+}
+.project:hover .project-img {
+	top:0;
+}
+.project-img {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	z-index: 50;
+	-moz-box-shadow: 0px 0px 2px #333;
+	-webkit-box-shadow: 0px 0px 2px #333;
+	-ms-box-shadow: 0px 0px 2px #333;
+	-o-box-shadow: 0px 0px 2px #333;
+	box-shadow: 0px 0px 2px #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.envelope-front {
+	background: url(../img/envelope-front.png) no-repeat;
+	width: 240px;
+	height: 172px;
+	position: absolute;
+	top: 103px;
+	z-index: 100;
+}
+.envelope-back {
+	background: #eeedeb;
+	height: 30px;
+	width: 229px;
+	position: absolute;
+	top: 103px;
+	left: 5px;
+	z-index: 1;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 0px 3px #333;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	-ms-box-shadow: 0px 0px 3px #333;
+	-o-box-shadow: 0px 0px 3px #333;
+	box-shadow: 0px 0px 3px #333;
+}
+.num1, .num2, .num3, .num4, .num5, .num6 {
+	position: absolute;
+	z-index: 1000;
+	display: block;
+	font-size: 32px;
+	color: #ca8247;
+}
+.num1 { top: 7px; left: 114px; }
+.num2 { top: 7px; left: 112px; }
+.num3 { top: 5px; left: 112px; }
+.num4 { top: 5px; left: 111px; }
+.num5 { top: 5px; left: 113px; }
+.num6 { top: 10px; left: 111px; }
+
+.envelope-front h2 {
+	width: 100%;
+	margin-top: 65px;
+	text-align: center;
+	font-size: 1.1em;
+}
+.envelope-front p {
+	width: 80%;
+	margin: 10px 24px;
+	text-align: center;
+	color: #4d4c4b;
+}
+/* Footer
+------------------- */
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 860px;
+	margin: 0 auto;
+	padding-top: 13px;
+	color: #c2c2ba;
+}
+#footer-wrap {
+	background: #41403e;
+	height: 50px;
+	margin-top: 80px;
+}
